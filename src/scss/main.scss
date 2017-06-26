@@ -1,0 +1,29 @@
+$color-amarillo: rgb(247, 182, 23);
+$color-gris: rgb(43, 43, 43);
+$letra-blanca: #fff;
+
+.titulo{
+  background: $color-amarillo;
+  color: $letra-blanca;
+}
+.menu{
+  ul{
+    li{
+      background: $color-gris;
+      list-style: none;
+      color: $letra-blanca;
+      margin-bottom: 1%;
+    }
+    .li-amarillo{
+       background: $color-amarillo;
+     }
+  }
+}
+.aside{
+    background: $color-gris;
+    color: $letra-blanca;
+    text-align: center;
+}
+.footer{
+  @extend .aside;
+}

@@ -1,0 +1,18 @@
+.titulo {
+  background: #f7b617;
+  color: #fff; }
+
+.menu ul li {
+  background: #2b2b2b;
+  list-style: none;
+  color: #fff;
+  margin-bottom: 1%; }
+.menu ul .li-amarillo {
+  background: #f7b617; }
+
+.aside, .footer {
+  background: #2b2b2b;
+  color: #fff;
+  text-align: center; }
+
+/*# sourceMappingURL=main.css.map */
