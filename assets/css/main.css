@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box; }
+
 .titulo {
   background: #f7b617;
   color: #fff; }
@@ -6,7 +9,8 @@
   background: #2b2b2b;
   list-style: none;
   color: #fff;
-  margin-bottom: 1%; }
+  margin-bottom: .5%;
+  padding: 1%; }
 .menu ul .li-amarillo {
   background: #f7b617; }
 
@@ -14,5 +18,24 @@
   background: #2b2b2b;
   color: #fff;
   text-align: center; }
+
+.container {
+  width: 100%; }
+
+@media (min-width: 1024px) {
+  .menu {
+    width: 16.66%;
+    display: inline-block; }
+
+  .contenedor-principal {
+    width: 49.98%;
+    display: inline-block; }
+
+  .aside, .footer {
+    width: 24.99%;
+    display: inline-block; }
+
+  .footer {
+    width: 99.96%; } }
 
 /*# sourceMappingURL=main.css.map */

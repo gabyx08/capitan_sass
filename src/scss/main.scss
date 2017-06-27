@@ -1,7 +1,11 @@
 $color-amarillo: rgb(247, 182, 23);
 $color-gris: rgb(43, 43, 43);
 $letra-blanca: #fff;
+$col: 8.33%;
 
+*{
+  box-sizing: border-box;
+}
 .titulo{
   background: $color-amarillo;
   color: $letra-blanca;
@@ -12,7 +16,8 @@ $letra-blanca: #fff;
       background: $color-gris;
       list-style: none;
       color: $letra-blanca;
-      margin-bottom: 1%;
+      margin-bottom: .5%;
+      padding: 1%;
     }
     .li-amarillo{
        background: $color-amarillo;
@@ -26,4 +31,25 @@ $letra-blanca: #fff;
 }
 .footer{
   @extend .aside;
+}
+
+.container{
+  width: 100%;
+}
+@media (min-width: 1024px)   {
+  .menu{
+    width: $col*2;
+    display: inline-block;
+  }
+  .contenedor-principal{
+    width: $col*6;
+    display: inline-block;
+  }
+  .aside{
+    width: $col*3;
+    display: inline-block;
+  }
+  .footer{
+    width: $col*12;
+  }
 }
