@@ -2,6 +2,8 @@ $color-amarillo: rgb(247, 182, 23);
 $color-gris: rgb(43, 43, 43);
 $letra-blanca: #fff;
 $col: 8.33%;
+$font-size: 16px;
+$display-inlineBlock: inline-block;
 
 *{
   box-sizing: border-box;
@@ -10,6 +12,7 @@ $col: 8.33%;
   background: $color-amarillo;
   color: $letra-blanca;
 }
+
 .menu{
   ul{
     li{
@@ -33,21 +36,47 @@ $col: 8.33%;
   @extend .aside;
 }
 
-.container{
-  width: 100%;
-}
-@media (min-width: 1024px)   {
+@media ( min-width: 768px ) and (max-width: 1024px){
+  .container{
+    width: 100%;
+    font-size: 0;
+  }
   .menu{
-    width: $col*2;
-    display: inline-block;
+    width: $col*3;
+    display: $display-inlineBlock;
+    vertical-align: top;
+    font-size: $font-size;
+  }
+  .contenedor-principal{
+    width: $col*9;
+    padding: 0 2%;
+    display: $display-inlineBlock;
+    font-size: $font-size;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 2560px) {
+  .container{
+    width: 100%;
+    font-size: 0;
+  }
+  .menu{
+    width: $col*3;
+    display: $display-inlineBlock;
+    vertical-align: top;
+    font-size: $font-size;
   }
   .contenedor-principal{
     width: $col*6;
-    display: inline-block;
+    padding: 0 2%;
+    display: $display-inlineBlock;
+    font-size: $font-size;
   }
   .aside{
     width: $col*3;
-    display: inline-block;
+    display: $display-inlineBlock;
+    vertical-align: top;
+    font-size: $font-size;
   }
   .footer{
     width: $col*12;
